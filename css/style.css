@@ -1,3 +1,7 @@
+body {
+    font-family: 'Poppins', sans-serif;;
+}
+
 .flexContainer {
     display: flex;
     width: 900px;
@@ -32,6 +36,7 @@ button {
 button:hover{
     background-color: rgb(33, 84, 202);
     cursor: pointer;
+    color: white;
 }
 
 .workHeader {
@@ -69,14 +74,19 @@ button:hover{
 }
 
 .workImg {
-    /*background-color: crimson;*/
+    /*background-color: crimson;*/  
     margin-right: 10px;
     text-align: center;
 }
 
+.workImg img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
 .workInfo {
     width: auto;
-
 }
 
 .viewMore {
@@ -119,6 +129,12 @@ button:hover{
     .skillContainer img {
         width: 100px;
     }
+
+    .workImg img {
+        width: auto;
+        height: 400px;
+        object-fit: cover;
+    }
 }
 
 @media only screen and (max-width:599px) {
@@ -156,6 +172,12 @@ button:hover{
         width: 50%;
     }
     
+    .workImg img {
+        width: auto;
+        height: 300px;
+        object-fit: contain;
+    }
+
 }
 
 
